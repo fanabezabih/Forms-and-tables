@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading {
+            font-size: 35px;
+        }
+
+        .signup_form {
+            font-family: sans-serif;
+            margin-left: 100px;
+            margin-right: 550px;
+            font-size: 15px;
+            width: 500px;
+            height: 730px;
+            padding: 40px;
+            box-shadow: #D8D5D5 4px 4px 4px 4px, -4px -4px 4px 4px rgb(221, 218, 218);
+            border-color: #CECACA;
+            margin: 100px auto
+        }
+
+        .signup-lines {
+            position: relative;
+            margin: 50px auto;
+            margin-bottom: 25px;
+            text-align: center;
+            color: black;
+        }
+
+        .signup-lines:before {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 180px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: darkgray;
+        }
+
+        .signup-lines:after {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 180px;
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            right: 8%;
+            background: darkgrey;
+        }
+
+        .signup_form input {
+            width: 94%;
+            padding: 16px 15px;
+            border: solid 1px;
+            margin: 10px 0;
+        }
+
+
+        .signup_form input[type=checkbox] {
+            height: 15px;
+            width: 15px;
+        }
+
+        .signup_form button {
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: black;
+            font-size: 20px;
+            width: 500px;
+            height: 50px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        i {
+            margin-inline-start: 150px;
+            margin-bottom: 1px;
+        }
+
+        #google {
+            font-size: 30px;
+            border: none;
+            width: 30px;
+            height: 30px;
+            box-shadow: rgb(221, 219, 219) 2px 2px 2px 2px, -1px -1px 1px 1px rgb(221, 219, 219);
+            padding: 10px;
+            color: black;
+        }
+
+        #facebook {
+            font-size: 30px;
+            margin-left: 50px;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form class="signup_form" action="SignIn.html">
+        <p> Already have an account? <a href="SignIn.html" style="color: black; text-decoration: none;"><b>sign In</b></a></p>
+        <h1 id="heading"> Sign Up</h1>
+            <label for="name"> Name: </label>
+            <br>
+            <input type="name" id="name" name="fname" placeholder="Enter your name here">
+            <br>
+            <label for="email"> Email: </label>
+            <br>
+            <input type="email" id="sign up email" name="sign up email" placeholder="ericjames@gmail.com">
+            <br>
+            <label for="password"> Password </label>
+            <br>
+            <input type="password" id=" password ID" name="password ID" maxlength="12" pattern="A-Z">
+
+            <input type="checkbox" id="signup-terms" name="terms">
+
+            <label for="terms" style="font-size: 14px;"> I've Read And Agree with<b> The Terms Of Service </b> And our
+                <b>Privacy Policy</b></label>
+            <a href="SignIn.html"> <button type="button" id="signup_button">Sign Up</button></a>
+            <h3 class="signup-lines"> Or Sign Up With </h3>
+
+            <a href="https://www.google.com"> <i id="google" class="fa-brands fa-google"></i></a>
+            <a href="http://www.facebook.com"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+    </form>
+</body>
+
+</html>
